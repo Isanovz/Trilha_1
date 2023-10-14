@@ -1,0 +1,347 @@
+<!-- Escreva ! e dê enter, para aparecer a estrutura do site -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Página</title>
+
+    <!-- Aquele ícone que fica na aba, tem que ser .ico
+    Usar o comando "link:favicon" pra inserir a tag do ícone
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    Se a imagem estiver em uma pasta interna:
+    nome_pasta/nome_arquivo.ico
+    -->
+    
+    <!-- O asterisco usado abaixo define algo para a página toda-->
+    <style>
+    * {
+        text-align: center;
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Programação</a>
+            <a href="">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <h1>Olá Mundo!(Título H1)</h1>
+    <p>Testezinho (Parágrafo)</p>
+
+    <!-- Texto pré-formatado, ele não vem corrido na linha,
+    se tu der enter entre as frases ele obedece-->
+    <pre>
+        Olhe, ele já vem com uma letra diferente e aqui
+        quando eu dou enter ele segue, sem eu precisar
+        criar várias tags de parágrafo. (Tag pre)
+    </pre>
+
+    <!-- Atalho para comentar "Ctrl + ;" -->
+
+    <h1>Menu</h1>
+
+    <!-- Para o menu ficar na horizontal utilizamos a tag nav -->
+        <nav>
+            <a href="">Home</a>
+            <a target="_blank" href="">Contatos</a>
+            <a target="_blank" href="">Notícias</a>
+            <a target="_blank" href="">Sobre</a>
+        </nav>
+
+        <!-- Para o menu ficar na vertical (um em cima do outro) 
+    utilizamos a tag de lista "ul", e "li" para colocar os
+    itens. -->
+
+    <p>Outra forma:</p>
+
+        
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a target="_blank" href="">Contatos</a></li>
+            <li><a target="_blank" href="">Notícias</a></li>
+            <li><a target="_blank" href="">Sobre</a></li>
+        </ul>
+        
+
+    <h1>Links</h1>
+
+    <h2>Imagem como link</h2>
+    <a href="https://descodificadas.com.br" target="_blank">
+        <img src="bla.jpg" alt="texto alternativo">
+    </a>
+
+    <h2>Link em partes do texto</h2>
+    <p>Você pode acessar por aqui 
+        <a href="https://descodificadas.com.br" 
+        target="_blank">Site das Descodificadas</a>
+    </p>
+    
+    <h2>Link para enviar e-mail</h2>
+    <a href="mailto:contato@descodificadas.com.br">
+        Envie um e-mail para Descodificadas
+    </a>
+
+    <h2>Texto como link</h2>
+    <a title="Nosso link!" 
+    href="https://descodificadas.com.br">Visite o site das
+    Decodificadas e fique por dentro!</a>
+
+    <!-- O title serve para informar algo ao posicionar o cursor
+    sobre o texto. -->
+
+    <h2>Links Internos</h2>
+    <p>Esta é a primeira página temos uma segunda 
+        <a href="segundapagina.html">Que é esta!</a>
+    </p>
+
+    <h2>Link para download</h2>
+    <a href="livro.pdf">Download</a>
+
+    <br>
+
+    <h1>Para colocar áudio:</h1>
+    <audio src="bla.mp3" controls>Som</audio>
+    <br>
+
+    <br>
+    <h1>Para colocar vídeos que estão baixados:</h1>
+    <video controls="controls" autoplay="autoplay">
+        <source src="bla.mp4" type="video/mp4">
+    </video>
+
+    <h1>Vídeo do Youtube</h1>
+    <!-- Entre em algum vídeo do Youtube, clique em
+    compartilhar, em Embed/Incorporar e copie o iframe-->
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/wgGBTgdhFOs?si=4BWxrrVkCVgGGWh5" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; 
+    web-share" allowfullscreen></iframe>
+
+    <h1>Inserir Mapa</h1>
+    <!-- Entre no Google Maps, procure um local e clique
+    em share/compartilhar, depois em "Embed a map" ou "
+    Incorporar um mapa" e copie o iframe. -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17502.290060980937!2d-47.426117427378585!3d-22.75041178821087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89db17ef32f85%3A0x1b9f2649328754d1!2sSupermercados%20S%C3%A3o%20Vicente%20-%20Centro!5e0!3m2!1spt-BR!2sbr!4v1695941666797!5m2!1spt-BR!2sbr" 
+    width="300" height="350" style="border:0;" 
+    allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>Formulário Simples com Placeholder</h1>
+        <form>
+            <input type="text" name="nome" 
+            placeholder="Digite seu Nome aqui"><br>
+            <input type="e-mail" name="email" 
+            placeholder="Digite seu e-mail"><br>
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+    
+        <h1>Formulário com uma função</h1>
+        <form><input type="button" value="Clique Aqui" 
+        onclick="msg()"></form>
+        <script>
+            function msg(){
+                alert("Você clicou no botão!")
+            }
+        </script>
+        <br>
+        
+        <h1>Formulário com opções de múltipla escolha</h1>
+        <form>
+            <input type="checkbox" name="veiculo1"
+            value="Bicicleta">Eu tenho uma bicicleta <br>
+            <input type="checkbox" name="veiculo2"
+            value="Carro">Eu tenho um carro <br>
+            <input type="checkbox" name="veiculo3"
+            value="Moto">Eu tenho uma moto <br>
+        </form>
+
+        <h1>Campo para escolher cor</h1>
+        <form>
+            Selecione sua cor preferida: <input type="color" 
+            name="favcor" value="#000000">
+        </form>
+        <br>
+
+        <h1>Campo para Datas</h1>
+        <form>
+            Data de Nascimento: <input type="date" 
+            name="nascimento"><br><br>
+            Data de Nascimento: <input type="datetime-local" 
+            name="bdaytime">
+        </form>
+        <br>
+
+        <h1>Campo para e-mail</h1>
+        <form>
+            E-mail: <input type="email" name="e-mail" 
+            placeholder="Digite seu e-mail aqui">
+        </form>
+
+        <h1>Campos de formulários para carregar arquivos</h1>
+        <form>
+            <input type="file" name="arquivos"><br>
+            <input type="file" name="arquivos" multiple>
+        </form>
+
+        <h1>Campos de formulários com imagem</h1>
+        <form>
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            <input type="image" src="seta.png" alt="Submit" width="48" height="48">
+        </form>
+
+        <h1>Campos de Formulários para mês</h1>
+        <form>
+            Mês e ano: <input type="month" name="mesano">
+        </form>
+        <br>
+
+        <h1>Campos de formulário com intervalo definido</h1>
+        <form>
+            Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">
+        </form>
+        <br>
+
+        <h1>Campos de formulários para senhas</h1>
+        <form>
+            <input type="password" name="senha" placeholder="Digite sua senha">
+        </form>
+        <br>
+
+    <h1>Campos de formulários para uma única escolha</h1>
+        <form>
+        <p>Qual sua idade?</p>
+            <input type="radio" name="idade" value="18_22">18 a 22
+        <br>
+            <input type="radio" name="idade" value="23_30">23 a 30
+        <br>
+            <input type="radio" name="idade" value="mais31">acima de 31
+        <br>
+        </form>
+
+        <h1>Campos de formulário com barra de status</h1>
+        <form>
+            Defina seu nível de satisfação:<br>
+            Pouco satisfeito
+            <input type="range" name="satisfeito" min="0" max="10">
+            Muito satisfeito
+        </form>
+        <br>
+
+        <h1>Campos de formulários para campo de pesquisa</h1>
+        <form>
+            Pesquisar: <input type="search" name="q">
+        </form>
+        <br>
+
+        <h1>Campos de formulários para botões</h1>
+        <form>
+            <input type="submit" value="Enviar Formulário">
+        </form>
+        <br>
+
+        <h1>Campos de formulários para telefone</h1>
+        <form>
+            Telefone: <input type="tel" name="usertel">
+        </form>
+        <br>
+
+        <h1>Campos de formuláros para horários</h1>
+        <form>
+            Escolha o horário: <input type="time" name="user_horario">
+            <br>
+        </form>
+
+        <h1>Campos de formulário para links</h1>
+        <form>
+            Link do seu Website: <input type="url" name="webpage">
+        </form>
+        <br>
+
+        <h1>Campos de formulários para definir semana</h1>
+        <form>
+            Selecione uma semana: <input type="week" name="semana">
+        </form>
+        <br>
+
+        <h1>Campos de formulários para criar áreas de textos</h1>
+        <form>
+            <textarea></textarea>
+            <textarea>Área de texto com um texto inicial dentro</textarea>
+        </form>
+        <br>
+
+        <h1>Exemplo formulário com vários elementos</h1>
+        <form>
+            <p>Envie uma mensagem preenchendo o formulário abaixo</p>
+
+            <div>
+                <label for="nome">Seu nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu Telefone">
+            </div>
+            <br>
+            <div class="field">
+                <label for="email">Seu E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+            </div>
+            <br>
+            <div class="field radiobox">
+                <span>Deseja receber nossas novidades?</span>
+                <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                <input type="radio" name="novidades" id="nao" value="nao" checked><label for="nao">Não</label>
+            </div>
+        </form>
+
+        <!-- CSS Externo
+        <head>
+            <link rel="stylesheet" href="style.css">
+        </head> -->
+
+        <!-- CSS Interno
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+            h1{
+                color: red;
+                padding: 60px;
+            }
+            p{
+                text-align: ;
+                font-size: ;
+                color: ;
+                font-weight: bold;
+                opacity: ;
+                font-family: ;
+                font-style: italic;
+            }
+        </style> -->
+        
+        <!-- CSS Inline
+        <body style="background-color: black;">
+            <h1 style="color: brown; padding: 30px">Descodificadas</h1>
+            <p style="color: white">Usado somente aqui.</p>
+        </body> -->
+
+        <!-- Fontes diferentes:
+        https://fonts.google.com
+        Escolha uma fonte, clique no ícone de prancheta e copie o link ou o import.
+        <style>
+            @import url();
+        </style> -->
+
+</body>
+</html>
