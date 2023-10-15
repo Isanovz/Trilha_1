@@ -1,16 +1,12 @@
 # Trilha_1
  Tarefas da Trilha 1 do Curso Descodificadas
 
-Hospedagem - GitHub: https://isanovz.github.io/Trilha_1/
+<a href="https://isanovz.github.io/Trilha_1/">Hospedagem - GitHub</a>
 
-Aula 1
-Link: https://isanovz.github.io/Trilha_1/Aula/index.html
+<a href="https://isanovz.github.io/Trilha_1/Aula/index.html">Aula 1</a>
 
-Aula 3
-Link: https://isanovz.github.io/Trilha_1/Aula3/index.html
+<a href="https://isanovz.github.io/Trilha_1/Aula3/index.html">Aula 3</a>
 
-Tarefa 7 - Seletores
-Link: https://isanovz.github.io/Trilha_1/Seletores/index.html
+<a href="https://isanovz.github.io/Trilha_1/Seletores/index.html">Tarefa 7 - Seletores</a>
 
-Projeto do Curso:
-Link: https://isanovz.github.io/Trilha_1/Projeto/index.html
+<a href="https://isanovz.github.io/Trilha_1/Projeto/index.html">Projeto do Curso</a>
