@@ -9,4 +9,6 @@
 
 <a href="https://isanovz.github.io/Trilha_1/Seletores/index.html">Tarefa 7 - Seletores</a>
 
+<a href="https://isanovz.github.io/Trilha_1/Box_Model/index.html">Tarefa 8 - Box Model</a>
+
 <a href="https://isanovz.github.io/Trilha_1/Projeto/index.html">Projeto do Curso</a>
