@@ -11,4 +11,6 @@
 
 <a href="https://isanovz.github.io/Trilha_1/Box_Model/index.html">Tarefa 8 - Box Model</a>
 
+<a href="https://isanovz.github.io/Trilha_1/Animation/index.html">Tarefa 10 - Animações</a>
+
 <a href="https://isanovz.github.io/Trilha_1/Projeto/index.html">Projeto do Curso</a>
